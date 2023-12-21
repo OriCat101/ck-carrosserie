@@ -1,0 +1,85 @@
+.linksWrapper {
+  background-color: #d0d3e8;
+  padding: 50px 0;
+  margin-bottom: 3vh;
+  .container {
+    h2 {
+      padding-bottom: 30px;
+      color: $acent-color1 !important;
+      text-transform: none;
+      font-size: 35px;
+    }
+
+    .columns {
+      div {
+        flex-direction: row;
+        width: 22%;
+      }
+
+      .link {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FFA03D;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 35px;
+        box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.45);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        min-width: 20%;
+        width: fit-content;
+        &:hover {
+          transform: scale(1.03);
+          background-color: #ffa03d;
+        }
+        a {
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          flex-direction: column;
+          width: 100%;
+          min-height: 175px;
+
+          &, p {
+            color: #fff !important;
+            text-decoration: none !important;
+          }
+
+          p {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+          }
+
+          h3 {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: $weight-bold;
+            margin: 15px 0;
+          }
+        }
+      }
+      @media only screen and (max-width: 1400px) and (min-width: $screen-xl) {
+        flex-wrap: wrap;
+        .link {
+          min-width: 45%;
+          &:nth-child(odd):last-child {
+            width: 94%;
+            margin-right: 20px;
+          }
+        }
+      }
+      @media only screen and (max-width: $screen-xl) {
+        .link {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

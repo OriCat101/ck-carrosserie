@@ -1,0 +1,48 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  color: $primary-text ;
+  margin: 0;
+}
+
+a {
+  color: $primary-text;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: $weight-bold;
+  color: $acent-color1;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: $weight-bold;
+  color: $acent-color2 !important;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: $primary-text;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: $weight-bold;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: $acent-color1 !important;
+}
+
+.emergency {
+  color: #FF0000;
+}
+
+p#surtitle {
+  font-size: 30px;
+  font-weight: $weight-bold;
+}

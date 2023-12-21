@@ -1,0 +1,25 @@
+.featureButton {
+  margin-top: 2vh;
+  background-color: $acent-color2 !important;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.03);
+  }
+  p{
+    font-weight: 700;
+    color: #fff;
+    // padding: 0 !important;
+  }
+  a{
+    color: #fff;
+    text-decoration: none !important;
+  }
+
+  @media only screen and (max-width: $screen-xl) {
+    align-self: center;
+  }
+}

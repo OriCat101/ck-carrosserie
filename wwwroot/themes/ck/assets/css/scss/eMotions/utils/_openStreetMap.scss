@@ -1,0 +1,11 @@
+.openStreetMap {
+  display: flex;
+  cursor: pointer;
+  padding-bottom: 3vh;
+  user-select: none;
+
+  iframe {
+    width: 100%;
+    height: 50vh;
+  }
+}

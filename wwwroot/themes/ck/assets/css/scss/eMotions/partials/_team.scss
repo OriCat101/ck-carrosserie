@@ -1,0 +1,66 @@
+.team-member {
+  flex-direction: row;
+  flex-wrap: unset;
+  max-height: min-content;
+  margin-bottom: 5vh;
+  &:first-of-type {
+    margin-top: 5vh;
+  }
+  
+  h2 {
+    padding-bottom: 3px;
+    margin-bottom: 0;
+  }
+  
+  h2, h3 {
+    color: $acent-color1 !important;
+    text-transform: none;
+  }
+  
+  .surtitle {
+    color: $acent-color2 !important;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 20px;
+    // padding-bottom: 3vh;
+  }
+
+  .portrait {
+    min-width: 250px;
+    width: fit-content;
+    margin-right: 25px;
+    // display: flex;
+    img {
+      box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.45);
+      transition: all 0.3s ease;
+      width: 250px;
+      border-radius: 20px;
+    }
+  }
+
+  .toggle{
+    padding: 0;
+  }
+
+  .infos {
+    width: 100%;
+  }
+
+  tr {
+    td{
+      vertical-align: top;
+      &:first-child {
+        width: 100px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-xl) {
+    flex-direction: column;
+    .portrait{
+      width: 100%;
+      padding-bottom: 15px;
+      justify-content: center;
+    }
+  }
+}

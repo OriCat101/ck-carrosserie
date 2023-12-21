@@ -1,0 +1,48 @@
+.navbar {
+  background-color: #ffffffe6;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: normal;
+  padding: 0 !important;
+
+  .container {
+    padding-right: 0%;
+    #siteNavbar {
+      justify-content: flex-end;
+      width: 33%;
+      .nav-link{
+        padding-left: 40px;
+      }
+    }
+
+    #hamburger {
+      display: none;
+      font-size: 25px;
+    }
+    @media (width<=$screen-xl) {
+      align-items: flex-start;
+      margin-right: 0px !important;
+      #hamburger {
+        display: flex;
+        align-self: center;
+        padding: 0 12px;
+      }
+      #siteNavbar {
+        display: none;
+        background-color: #fff;
+        min-height: 100vh;
+        padding-top: 110px;
+      }
+      .logo-wide {
+        align-self: center;
+      }
+    }
+  }
+}

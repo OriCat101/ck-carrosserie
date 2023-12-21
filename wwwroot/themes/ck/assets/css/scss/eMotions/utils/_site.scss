@@ -1,0 +1,126 @@
+#body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+div#content {
+  flex-grow: 1;
+  padding: 0 0 5vh 0;
+  a:not(.nav-link) {
+    color: $acent-color1;
+    text-decoration: underline;
+  }
+}
+
+.image {
+  display: flex;
+  margin: 100px 0 5vh 0;
+  max-height: 680px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: calc(0.42 * 100vw);
+}
+
+.imgFeatureR, .imgFeatureL, .feature {
+  display: flex;
+  padding: 0 0 3vh 0;
+
+  .content-image {
+    border-radius: 20px;
+    @media (min-width: $screen-xl) {
+      max-width: 550px;
+      &:not(.slide){
+        margin: 30px;
+      }
+    }
+    margin: 0 30px;
+  }
+
+  h2 {
+    text-transform: none;
+    font-size: 35px;
+  }
+
+  .text {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    p:not(#surtitle, .featureButton a p) {
+      padding: 0 0 2vh 0;
+    }
+    h1 {
+      @media only screen and (max-width: $screen-xl) {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.imgFeatureR, .imgFeatureL {
+  img {
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.45);
+    opacity: 1;
+    filter: alpha(opacity=100);
+
+    &:hover {
+      opacity: 0.75;
+      filter: alpha(opacity=75);
+    }
+  }
+}
+
+.imgFeatureR {
+  flex-direction: row;
+  h2 {
+    color: $acent-color1 !important;
+  }
+  .content-image {
+    margin-right: 0;
+  }
+}
+
+.imgFeatureL {
+  flex-direction: row-reverse;
+  margin-left: 0;
+  .text {
+    padding-left: 20px;
+  }
+  .content-image {
+    margin-left: 0;
+  }
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  h2 {
+    color: $acent-color1 !important;
+    text-transform: none;
+  }
+  .logo-round{
+    margin: 30px 15px 0 0;
+  }
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+@media only screen and (max-width: $screen-xl) {
+  .imgFeatureR, .imgFeatureL {
+    flex-direction: column;
+    .content-image{
+      margin: 20px 0;
+      width: 100%;
+    }
+    .text{
+      padding: 0;
+    }
+  }
+}

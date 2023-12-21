@@ -1,0 +1,36 @@
+// Indexes
+.mura-index {
+	padding-top: 0;
+	border-top: 0;
+	margin-top: 0;
+
+	dl {
+		border-bottom: 1px solid $grey-400;
+		padding-bottom: 12px;
+		margin: 0 0 12px;
+		width: 100%;
+	}
+
+	.comments {
+		font-size: 12px;
+	}
+	.credits {
+		font-size: 12px;
+	}
+
+	.releaseDate {
+		font-size: 12px;
+	}
+
+	.tags{
+		font-size: 12px;
+	}
+
+	.title {
+		font-size: 26px;
+	}
+
+	dd {
+		// margin-left: 0;
+	}
+}

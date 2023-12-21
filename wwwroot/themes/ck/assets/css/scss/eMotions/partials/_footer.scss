@@ -1,0 +1,60 @@
+.footer {
+  background-color: #ffede0;
+  padding-top: 40px;
+
+  &:first-child {
+    .columns {
+      text-align: left;
+      padding: 0.1rem 1em;
+    }
+  }
+
+  .columns{
+    p#address {
+      color: #000;
+    }
+
+    .logo-wide {
+      width: 350px;
+    }
+
+    #links {
+      width: fit-content;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          margin-bottom: 3px;
+          a {
+            font-size: 18px;
+            padding: 0.1rem ;
+          }
+        }
+      }
+      .active, .nav-link:hover {
+        color: $acent-color1;
+      }
+    }
+
+    @media only screen and (max-width: $screen-xl) {
+      flex-direction: column;
+      div {
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    div {
+      margin-right: 20px;
+    }
+    #imprint > p > a {
+      font-weight: $weight-bold;
+    }
+  }
+}
